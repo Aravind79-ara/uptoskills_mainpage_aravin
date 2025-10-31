@@ -804,7 +804,7 @@ button{
 
 /* responsive */
 @media (max-width: 1100px){
-  .cards{ grid-template-columns: repeat(2, 1fr); }
+  .cards{ grid-template-columns: repeat(1, 1fr); }
   .hero-title{ font-size:40px; }
 }
 
@@ -826,16 +826,20 @@ button{
     .job-cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-3d.tilt-a { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-b { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-c { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-d { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 412px) {
     .hero-title {
         font-size: 70px;
     }
     .job-cards-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
     
     
