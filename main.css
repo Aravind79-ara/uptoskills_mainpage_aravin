@@ -812,7 +812,7 @@ button{
 
 
 
-/* Responsive Design */
+/* Responsive Design container5 */
 @media (max-width: 1024px) {
     .main-content {
         grid-template-columns: 1fr;
@@ -831,7 +831,7 @@ button{
   .card-3d.tilt-c { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
   .card-3d.tilt-d { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
 }
-
+/* container5*/
 @media (max-width: 412px) {
     .hero-title {
         font-size: 70px;
@@ -840,6 +840,11 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+}
+.card-3d.tilt-a { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-b { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-c { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-d { transform: rotateX(12deg) rotateY(0deg) translateZ(5px); }
 }
     
     
