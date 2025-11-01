@@ -50,7 +50,7 @@ body{
 .grid {
     display:grid;
     grid-template-columns: 1fr;
-    gap:0px;
+    gap:5px;
 
   }
 .box1{
@@ -104,10 +104,11 @@ body{
     
 }
 .logo-text{
-  font-size: 40px;
+  font-size: 60px;
     background: linear-gradient(90deg,#0883ca 0%, #17ab0f 50%, #2130d0 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgb(214, 170, 115);
   
 }
 
@@ -210,6 +211,7 @@ body{
     font-weight: 700;
     line-height: 1.8;
     margin-bottom: 10px;
+    text-shadow: 3px 0 5px gold;
     
     background: linear-gradient(180deg,#7dc5ee 50%, #19af06 50%, #a90690 100%);
     background-clip: text;
@@ -354,6 +356,12 @@ button{
     height: 80%;
     object-fit: cover;
 }
+h1{
+  background: linear-gradient(80deg,orange 0%,white 50%, #dbdb42 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
 
 .job-title {
     color: #1a2332;
@@ -388,6 +396,26 @@ button{
 .container2 img {
   width: 100%;
   height: 400px;
+}
+.c2-h2{
+  background: linear-gradient(60deg,green,rgb(246, 71, 100));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  text-shadow: 2px 0 4px  #00c2b3;
+}
+.c2-h3{
+  color: #000;
+}
+.c2-button{
+  background: #00c2b3;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  box-shadow: 0 4px 15px black;
+}
+.c2-button:hover{
+  box-shadow: 0 19px 30px rgb(179, 1, 25);
 }
 
 .container3{
@@ -507,7 +535,7 @@ button{
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gap);
   align-items: center;
-  background :radial-gradient(600px 300px at 10% 10%, rgba(34,146,158,0.12), transparent 8%),
+  background :radial-gradient(600px 300px at 10% 10%,rgba(34,146,158,0.12), transparent 8%),
               radial-gradient(400px 220px at 92% 78%, rgba(170,78,202,0.07), transparent 6%),
               linear-gradient(180deg, var(--bg-1), var(--bg-2)); ;
 }
@@ -518,14 +546,26 @@ button{
   flex-direction:column;
   align-items: center;
   gap:10px;
-  border-radius: 20%;
+  border-radius: 40px;
   height: 100px;
   width: 400px;
  box-sizing:content-box;
  color: #012026;
  margin-left: 100px;
- background: linear-gradient(110deg, white,rgba(34,146,158,0.12));
+ background:white;
 
+}
+.totals h2{
+  font-size: 40px;
+  color: rgb(13, 4, 4);
+}
+.totalh h2{
+  font-size: 40px;
+  color:black;
+}
+.totalf h2{
+  font-size: 40px;
+  color: black;
 }
 .card5:hover{ transform: translateY(-4px); box-shadow: 0 18px 40px rgba(242, 241, 245, 0.45); }
 
@@ -534,6 +574,8 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.9;
+    margin-top: 20px;
     
 }
 .wrap{
@@ -545,17 +587,23 @@ button{
     margin-bottom:34px;
   }
   header h1{
-    font-size:44px;
+    font-size:48px;
     margin:0;
     letter-spacing:-0.01em;
     background: linear-gradient(120deg,pink orange);
     -webkit-background-clip:text;
     background-clip:text;
   }
+  .c6{
+     background: linear-gradient(190deg,#7dc5ee 50%, #19af06 50%, #a90690 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
   header p{
     margin:8px 0 0;
-    color:var(--muted);
-    font-size:16px;
+    color:black;
+    font-size:20px;
   }
   .grid6 {
     display:grid;
@@ -578,7 +626,7 @@ button{
     transform-style: preserve-3d;
     transition: transform 400ms cubic-bezier(.2,.9,.2,1), box-shadow 400ms;
     will-change: transform;
-    box-shadow: 0 8px 24px rgba(3,8,18,0.55);
+    box-shadow: 0 8px 14px rgba(3,8,18,0.55);
   }
 
   .card-3d.tilt-a { transform: rotateX(35deg) rotateY(0deg) translateZ(5px); }
@@ -606,7 +654,7 @@ button{
     width:90%;
     margin-top:14px;
     background: linear-gradient(90deg, var(--accent2), var(--accent1));
-    box-shadow: 0 6px 24px rgba(124,92,255,0.12), 0 2px 8px rgba(0,224,216,0.06) inset;
+    box-shadow: 0 3px 10px rgba(124,92,255,0.12), 0 2px 8px rgba(0,224,216,0.06) inset;
   }
   .card-head {
     display:flex;
@@ -615,8 +663,9 @@ button{
   }
   .stat {
     font-size:34px;
-    font-weight:500;
+    font-weight:700;
     line-height:1;
+    color: #0883ca;
   }
   .stat-sub {
     color:red;
@@ -677,7 +726,7 @@ button{
   width: 30px;
   height: 30px;
   background: rgba(255, 255, 255, 0.15);
-  transform: rotate(48deg);
+  transform: rotate(88deg);
   animation: floatCube 8s infinite ease-in-out;
   border-radius: 2px;
 }
@@ -790,6 +839,17 @@ button{
   right: -200px;
 }
 
+.container7{
+  background:linear-gradient(90deg,rgb(234, 214, 178),rgb(131, 160, 131));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.start{
+font-size: 30px;
+background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
+}
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px){
   .hero{ grid-template-columns: 1fr 360px }
@@ -828,12 +888,11 @@ button{
    
   /* Navbar - compact */
   .navbar{
-    width: 100%;
     padding:1px;
     align-items:center;
   }
   .navgrid{
-     width: 100%;
+     width: 412px;
   }
   .logo{
     padding: 20px;
@@ -877,14 +936,17 @@ button{
   /* Cards: single column, larger images for touch targets */
   .card-grid{ grid-template-columns: 1fr; gap:18px; margin:8px }
   .card{ padding:14px; 
-    width: 480px;border-radius:12px; min-height: unset }
+    width: 350px;border-radius:12px; min-height: unset }
   .card-media{ height:100%; }
-  .job-title{ font-size:18px }
+  .job-title{ font-size:15px;display: flex; }
+  .compi{
+    font-size: 26px;
+  }
   .muted{ font-size:13px }
   .btn-apply{ width:100%; padding:12px; border-radius:10px; font-size:16px }
 
   /* 3D grid -> stacked small blocks for mobile */
-  .grid6{ grid-template-columns: 1fr; gap:14px; margin-top:18px }
+  .grid6{ grid-template-columns: 1fr 1fr; gap:14px; margin-top:18px }
   .card-3d{ padding:12px; border-radius:12px }
 
   /* Footer cards full width */
@@ -899,6 +961,17 @@ button{
 
   /* Ensure focus outlines show clearly for keyboard users */
   a:focus, button:focus, input:focus { outline:3px solid rgba(0,224,216,0.12); outline-offset:2px }
+
+
+  .card-3d.tilt-a { transform: rotateX(1deg) rotateY(0deg) translateZ(1px); }
+  .card-3d.tilt-b { transform: rotateX(1deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-c { transform: rotateX(1deg) rotateY(0deg) translateZ(5px); }
+  .card-3d.tilt-d { transform: rotateX(1deg) rotateY(0deg) translateZ(5px); }
+
+  .card-3d:hover{
+    transform: translateY(-14px) rotateX(1deg) rotateY(0deg) translateZ(4px);
+    box-shadow: 0 8px 40px rgba(2,10,30,0.65);
+  }
 
   /* Tiny screens: smaller gap and font tweaks */
   @supports (font-size: clamp(14px, 4vw, 16px)) {
