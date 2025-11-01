@@ -37,6 +37,7 @@ body{
     min-height: 100vh;
     color: white;
     display: block;
+    background: var(--bg-2);
 }
 
 .container {
@@ -67,7 +68,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px ;
+    padding: 17px ;
     margin-bottom: 30px;
     background:linear-gradient(20deg,white,black);
     color: black;
@@ -946,11 +947,11 @@ background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
   .btn-apply{ width:100%; padding:12px; border-radius:10px; font-size:16px }
 
   /* 3D grid -> stacked small blocks for mobile */
-  .grid6{ grid-template-columns: 1fr 1fr; gap:14px; margin-top:18px }
+  .grid6{ grid-template-columns: 1fr 1fr; gap:18px; margin-top:18px }
   .card-3d{ padding:12px; border-radius:12px }
 
   /* Footer cards full width */
-  .container5{ flex-direction:column; gap:10px }
+  .container5{ flex-direction:column; gap:8px }
   .card5{ width:100%; margin-left:0 }
 
   /* Reduce shadows slightly for performance on low-end phones */
