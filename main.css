@@ -818,7 +818,7 @@ button{
   /* Navbar - compact */
   .navbar{
     width: 100%;
-    padding:12px 0 0 0 ;
+    padding:12px  0 0 ;
     align-items:center;
   }
   .logo-text{ font-size:35px }
