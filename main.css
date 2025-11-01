@@ -217,6 +217,7 @@ body{
     background: linear-gradient(180deg,#7dc5ee 50%, #19af06 50%, #a90690 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition:all .5s ease;
 
 }
 /* Replace the .started block (remove absolute positioning) */
@@ -252,7 +253,7 @@ body{
 .started button:hover {
     background: rgb(232, 181, 232);
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgb(16, 216, 39);
+    box-shadow: 0 4px 10px rgb(97, 224, 112);
 }
 .box {
     background: linear-gradient(100deg,rgb(64, 224, 171),rgb(234, 46, 46),rgb(35, 212, 141));
@@ -275,16 +276,19 @@ button{
     transition: transform 0.2s;
 }
 .for_student:hover {
-    background: rgb(207, 236, 101);
+    background: rgb(227, 229, 221);
     transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .for_hr:hover {
-    background: rgb(197, 217, 127);
+    background: rgb(242, 244, 236);
     transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .for_faculty:hover {
-    background: rgb(208, 229, 133);
+    background: rgb(216, 218, 210);
     transform: scale(1.05);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Hero Image */
@@ -403,7 +407,11 @@ h1{
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
-  text-shadow: 2px 0 4px  #00c2b3;
+  text-shadow: 2px 0 2px  #00c2b3;
+  transition: all 0.3s ease-out;
+}
+.c2-h2:hover{
+  text-shadow: 1px 0px 5px;
 }
 .c2-h3{
   color: #000;
@@ -414,9 +422,10 @@ h1{
   font-size: 30px;
   font-weight: 700;
   box-shadow: 0 4px 15px black;
+  transition: all 1s ease-in-out;
 }
 .c2-button:hover{
-  box-shadow: 0 19px 30px rgb(179, 1, 25);
+  box-shadow: 0 5px 10px rgb(179, 1, 25);
 }
 
 .container3{
@@ -554,6 +563,7 @@ h1{
  color: #012026;
  margin-left: 100px;
  background:white;
+ transition: all 0.3s ease-in; 
 
 }
 .totals h2{
