@@ -36,7 +36,6 @@ body{
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
     color: white;
-    
     display: block;
 }
 
@@ -46,19 +45,19 @@ body{
     margin: 0;
     padding: 0px;
     position: relative;
+   
 }
 .grid {
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    gap:28px;
+    gap:0px;
 
   }
 .box1{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 20px;
+    gap: 0px;
     margin: 0px;
     width: 100%;
 }
@@ -76,10 +75,14 @@ body{
     margin-top: 4px;
     
 }
+.navgrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 100px;
+}
 
 .logo {
     display: flex;
-    align-items: center;
     gap: 10px;
     font-size: 24px;
     font-weight: bold;
@@ -98,7 +101,6 @@ body{
     list-style: none;
     font-size: 20px;
     font-weight: 600;
-    margin-right: 600px;
     
 }
 .logo-text{
@@ -113,7 +115,7 @@ body{
     color: rgba(28, 16, 16, 0.7);
     text-decoration: none;
     transition: color 0.3s;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 28px;
 }
 
@@ -380,23 +382,23 @@ button{
 
 
 .container2 {
-  margin-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 .container2 img {
   width: 100%;
-  border-radius: 20px;
   height: 400px;
 }
 
 .container3{
   width: 100%;
   
-  margin: 0 auto;
+  margin: 0 ;
   padding: 64px 24px;
   background: radial-gradient(600px 300px at 10% 10%, rgba(34,146,158,0.12), transparent 8%),
               radial-gradient(400px 220px at 92% 78%, rgba(170,78,202,0.07), transparent 6%),
               linear-gradient(180deg, var(--bg-1), var(--bg-2)); ;
+    
 }
 
 /* HERO */
@@ -809,8 +811,17 @@ button{
    MOBILE-SPECIFIC TWEAKS
    max-width: 450px (requested)
    =========================== */
-@media (max-width: 450px) {
-
+@media (max-width: 412px) {
+  body{
+    width: 411px;
+  }
+    .grid{
+    width: 100%;
+    gap: 0px;
+    }
+    .main-content {
+    display: grid;
+    grid-template-columns: 1fr;}
   /* Page padding and container */
   .site-wrap{ padding:12px; margin:0 }
   .container3{ padding:18px 10px }
@@ -818,15 +829,21 @@ button{
   /* Navbar - compact */
   .navbar{
     width: 100%;
-    padding:12px  0 0 ;
+    padding:1px;
     align-items:center;
   }
-  .logo-text{ font-size:35px }
+  .navgrid{
+     width: 100%;
+  }
+  .logo{
+    padding: 20px;
+  }
+  .logo-text{ font-size:45px;
+  }
   .logo-icon{ font-size:28px }
 
   /* Hide search to preserve space; keep primary CTA visible */
-  .search{ display:block ;
-  margin-right: 20px;}
+  .search{ display:block ;}
   /* keep hidden; consider adding a hamburger later */
   .nav-links{
     gap: 8px;
@@ -842,7 +859,7 @@ button{
   }
 
   /* HERO: single column, stacked + bigger readable text */
-  .hero{
+  .hero-section{
     grid-template-columns: 1fr;
     gap:18px;
     align-items:start;
@@ -858,10 +875,10 @@ button{
   .btn{ width:100%; min-width:0; padding:12px; border-radius:12px; font-size:16px; text-align:center }
 
   /* Cards: single column, larger images for touch targets */
-  .card-grid{ grid-template-columns: 1fr; gap:18px; margin-top:8px }
+  .card-grid{ grid-template-columns: 1fr; gap:18px; margin:8px }
   .card{ padding:14px; 
-    width: 450px;border-radius:12px; min-height: unset }
-  .card-media{ height:220px }
+    width: 480px;border-radius:12px; min-height: unset }
+  .card-media{ height:100%; }
   .job-title{ font-size:18px }
   .muted{ font-size:13px }
   .btn-apply{ width:100%; padding:12px; border-radius:10px; font-size:16px }
