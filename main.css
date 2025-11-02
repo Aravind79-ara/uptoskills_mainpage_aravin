@@ -953,7 +953,7 @@ background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
     .hero-inner-container3{
       justify-content: center;
       margin-top: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
     .pill-c3{ font-size:28px;
       text-justify: center;
@@ -979,14 +979,14 @@ background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
 .card-c3{
   width: 600px;
   height: 300px;
-  gap:50;
+  gap:50px;
 }
 .card-media img{
   display: flex;
   height: 100%;
 }
-.card-media button{
-  font-size: 0px;
+.card-c3 button{
+  font-size: 40px;
 }
 
   /* Cards: single column, larger images for touch targets */
@@ -1008,7 +1008,10 @@ background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
   .card-3d{ padding:12px; border-radius:12px }
 
   /* Footer cards full width */
-  .container5{ flex-direction:column; gap:8px }
+  .container5{ flex-direction:column; gap:8px;
+    padding: 30px;
+    padding-top: 10px;
+  }
   .card5{ width:100%; margin-left:0 }
 
   /* Reduce shadows slightly for performance on low-end phones */
