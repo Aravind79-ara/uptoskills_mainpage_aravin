@@ -78,10 +78,6 @@ body{
     position:sticky;
     top: 0;
     padding: 1px;
-    background-attachment: fixed;
-background-size: cover;
-
-    
 }
 .navgrid{
   display: grid;
@@ -244,7 +240,7 @@ background-size: cover;
     color: #e490a5;
     
 }
-.btn{
+.btns-c1{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap:28px;
@@ -252,18 +248,68 @@ background-size: cover;
     cursor: pointer;
 
   }
-.btns button{
-    margin: 20px;
-    border-radius: 30px; 
-    font-size: 30px; 
-    position: relative; 
-    cursor: pointer;
-    
+/* From Uiverse.io by doniaskima */ 
+.btn-55,
+.btn-55 *,
+.btn-55 :after,
+.btn-55 :before,
+.btn-55:after,
+.btn-55:before {
+  border: 1 solid;
+  box-sizing: border-box;
 }
-.started button:hover {
-    background: rgb(232, 181, 232);
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgb(97, 224, 112);
+
+.btn-55 {
+  -webkit-tap-highlight-color: transparent;
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 20px;
+  margin-left: 10px;
+  mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-55:disabled {
+  cursor: default;
+}
+
+.btn-55:-moz-focusring {
+  outline: auto;
+}
+
+.btn-55 svg {
+  display: none;
+  
+}
+
+.btn-55 [hidden] {
+  display: none;
+}
+
+.btn-55 {
+  background: linear-gradient(90deg, blue, red);
+  border-radius: 999px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #000;
+  display: block;
+  font-weight: 800;
+  overflow: hidden;
+  padding: 1.4rem 1rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-55:hover{
+  box-shadow: 0 3px 10px blue;
 }
 .box {
     background: linear-gradient(100deg,rgb(64, 224, 171),rgb(212, 126, 126),rgb(35, 212, 141));
@@ -895,21 +941,11 @@ margin: 30px;
   .container3{ padding:24px 8px }
   .site-wrap{ padding:12px }
 }
-@media (max-width: 820px),
-       (max-width: 415px) {
-  .navbar {
-    background: linear-gradient(20deg, rgb(157, 219, 219), rgb(148, 237, 148));
-  }
-}
 
 
-/* ===========================
-   MOBILE-SPECIFIC TWEAKS
-   max-width: 450px (requested)
-   =========================== */
-/* =====================================================
+/*
    FULL MOBILE RESPONSIVE UPGRADE  (max-width: 450px)
-   ===================================================== */
+  */
 @media (max-width: 450px) {
 
   body {
@@ -1027,12 +1063,15 @@ margin: 30px;
     height: auto;
   }
   .job-avatar img {
+    display: none;
     height: auto;
   }
   .btn-apply{
     padding: 10px 40px;
   }
-
+  .job-card h1{
+    font-size: 35px;
+  }
   /* CONTAINER 2 */
   .container2 img {
     height: 200px;
@@ -1048,6 +1087,7 @@ margin: 30px;
   /* CONTAINER 3 */
   .container3 {
     padding: 30px 10px;
+    
   }
   .cards {
     grid-template-columns: 1fr;
@@ -1057,7 +1097,21 @@ margin: 30px;
     width: 100%;
     height: auto;
   }
-
+  .btn{
+    font-size: 25px;
+  }
+  .hero-title-c3{
+    justify-self: center;
+    font-size: 40px;
+  }
+  .pill-c3{
+    margin-left: 150px;
+  }
+    
+  .card5{
+    background: #ace4e1;
+    margin-top: 0px;
+  }
   /* STATS GRID (container6) */
   .grid6 {
     grid-template-columns: 1fr;
@@ -1067,6 +1121,15 @@ margin: 30px;
   .card-3d {
     transform: none !important;
     min-height: 100px;
+  }
+  .hero-sub-c3{
+    margin-bottom: 30px;
+  }
+ .pill-c3{
+    margin-top: 30px;
+  }
+  .hero-title-c3{
+    margin: 20px;
   }
 
   /* CONTAINER 5 FOOTER */
