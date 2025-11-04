@@ -262,9 +262,7 @@ body{
 .btn-55 {
   -webkit-tap-highlight-color: transparent;
   appearance: button;
-  background-color: #000;
-  background-image: none;
-  color: #fff;
+  color: #e2d5d5;
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
@@ -298,8 +296,8 @@ body{
   background: linear-gradient(90deg, blue, red);
   border-radius: 999px;
   box-sizing: border-box;
-  font-size: 20px;
-  color: #000;
+  font-size: 22px;
+  color: #f5efef;
   display: block;
   font-weight: 800;
   overflow: hidden;
@@ -380,7 +378,7 @@ button{
 }
 
 .job-card {
-    background: linear-gradient(110deg, rgba(255,255,255,0.02), white);
+    background: linear-gradient(110deg, rgb(2, 42, 47), rgb(238, 218, 218));
     border-radius: 16px;
     padding: 24px;
     display: flex;
@@ -427,7 +425,7 @@ h1{
 }
 
 .job-title {
-    color: #1a2332;
+    color: #dadee4;
     font-size: 13px;
     font-weight: 600;
     line-height: 1.3;
@@ -920,10 +918,157 @@ h1{
 }
 .start{
 font-size: 30px;
-background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62));
+background: linear-gradient(80deg,rgb(230, 171, 62),rgb(62, 208, 62),blue);
 padding: 30px;
 margin: 30px;
 }
+/* container 7 */
+.footer-wrap{
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(58,57,67,1) 0%, rgba(49,48,55,1) 60%);
+    border-radius: var(--radius);
+    padding:40px 48px;
+    box-shadow: 0 8px 20px rgba(17,17,20,0.12);
+  }
+
+  /* Grid layout for desktop */
+  .footer-grid{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr 1fr;
+    gap: var(--gap);
+    align-items: start;
+  }
+
+  /* Left info column */
+  .brand {
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+  }
+  .brand img.logo{
+    width:140px;
+    height:auto;
+    object-fit:contain;
+  }
+  .brand .desc{
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.6;
+    max-width:300px;
+  }
+  .contact{
+    margin-top:18px;
+    color:var(--muted);
+    font-size:13px;
+    line-height:1.6;
+  }
+  .contact strong{color:var(--accent);font-weight:600}
+
+  /* Column lists */
+  .col{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .col h4{
+    color:var(--accent);
+    font-size:18px;
+    margin-bottom:6px;
+  }
+  .col ul{
+    list-style:none;
+  }
+  .col li{
+    margin:8px 0;
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  /* Subscribe / social column (right-most) */
+  .subscribe{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:flex-start;
+  }
+  .subscribe p{color:var(--muted);font-size:14px}
+  .subscribe .form{
+    display:flex;
+    gap:10px;
+    width:100%;
+  }
+  .subscribe input{
+    flex:1;
+    padding:10px 12px;
+    border-radius:8px;
+    border: none;
+    font-size:14px;
+    outline:none;
+  }
+  .subscribe button{
+    background:var(--accent);
+    color:white;
+    border:none;
+    padding:10px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:700;
+  }
+
+  .socials{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:6px;
+  }
+  .social{
+    width:36px;height:36px;border-radius:50%;
+    display:inline-grid;place-items:center;
+    background: rgba(255,255,255,0.06);
+    color:var(--link);font-size:16px;
+    text-decoration:none;
+  }
+
+  /* bottom tiny bar */
+  .footer-bottom{
+    margin-top:26px;
+    border-top:1px solid rgba(255,255,255,0.04);
+    padding-top:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:var(--muted);
+    font-size:13px;
+  }
+  .footer-bottom .links{display:flex;gap:14px}
+
+  /* Responsive: mobile (<=450px) */
+  @media (max-width:450px){
+    .footer-wrap{padding:18px}
+    .footer-grid{
+      grid-template-columns:1fr;
+      gap:14px;
+    }
+    .brand{align-items:center;flex-direction:column;text-align:center}
+    .brand img.logo{width:120px}
+    .brand .desc{max-width:100%}
+    .col h4{text-align:left}
+    .subscribe .form{flex-direction:row}
+    .footer-bottom{flex-direction:column;gap:10px;align-items:center}
+    .social{width:40px;height:40px}
+  }
+
+  /* Tablet small adjustments */
+  @media (max-width:900px){
+    .footer-grid{grid-template-columns:1fr 1fr; gap:20px}
+    .subscribe{align-self:flex-start}
+  }
+
+  /* small utility */
+  a{color:inherit;text-decoration:none}
+  .badge{display:inline-block;background:#256; padding:3px 8px;border-radius:999px;color:#dff; font-size:12px}
+
+
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px){
   .hero{ grid-template-columns: 1fr 360px }
@@ -1051,6 +1196,7 @@ margin: 30px;
     margin-top: 10px;
   }
   .job-card {
+    display: block;
     height: auto;
     padding: 20px;
   }
@@ -1068,6 +1214,10 @@ margin: 30px;
   }
   .job-card h1{
     font-size: 35px;
+  }
+  .job-title{
+    margin-top: 10px;
+    font-size: 17px;
   }
   /* CONTAINER 2 */
   .container2 img {
