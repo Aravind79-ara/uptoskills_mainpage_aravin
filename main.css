@@ -462,7 +462,7 @@ h1{
   height: 400px;
 }
 .c2-h2{
-  background: linear-gradient(60deg,rgb(137, 186, 238), rgb(114, 192, 114),rgb(229, 221, 222));
+  background: linear-gradient(60deg,rgb(218, 242, 8), rgb(215, 222, 215),rgb(248, 228, 10));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 70px;
@@ -1014,25 +1014,21 @@ margin: 30px;
   }
 
   .started {
-    margin: 20px auto;
+    margin: 20px;
     text-align: center;
   }
 
   .started p {
     font-size: 18px;
   }
-
-  .btn {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
+  .btns-c1{
+    gap: 0px;
   }
 
-  .btns button {
-    width: 100%;
-    font-size: 20px;
-    margin: 10px 0;
+  .btn-55{
+    border-radius: 20px;
+    width: 120px;
+    font-size: 13px;
   }
 
   .box {
@@ -1074,6 +1070,7 @@ margin: 30px;
   }
   /* CONTAINER 2 */
   .container2 img {
+    display:none;
     height: 200px;
   }
   .c2-h2 {
