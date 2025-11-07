@@ -66,6 +66,7 @@ body{
 /* Navigation */
 .navbar {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 17px ;
@@ -83,7 +84,7 @@ body{
 .navgrid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 100px;
+  gap: 300px;
   right: 0px;
 }
 
@@ -1099,17 +1100,19 @@ margin: 30px;
 }
 /* container 7 */
 .footer-wrap{
-    margin: 0 auto;
+  width: 100%;
+    margin: 0;
     background: linear-gradient(180deg, rgba(58,57,67,1) 0%, rgba(49,48,55,1) 60%);
     border-radius: var(--radius);
     padding:40px 48px;
     box-shadow: 0 8px 20px rgba(17,17,20,0.12);
+    border-radius: 0px;
   }
 
   /* Grid layout for desktop */
   .footer-grid{
     display: grid;
-    grid-template-columns: 1.1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr 1fr 1fr ;
     gap: var(--gap);
     align-items: start;
   }
@@ -1206,7 +1209,7 @@ margin: 30px;
 
   /* bottom tiny bar */
   .footer-bottom{
-    margin-top:26px;
+    margin-top:2px;
     border-top:1px solid rgba(255,255,255,0.04);
     padding-top:18px;
     display:flex;
@@ -1214,6 +1217,7 @@ margin: 30px;
     align-items:center;
     color:var(--muted);
     font-size:13px;
+    background: #012026;
   }
   .footer-bottom .links{display:flex;gap:14px}
 
@@ -1272,7 +1276,7 @@ margin: 30px;
     overflow-x: hidden;
   }
   .navgrid{
-    gap: 1px;
+    gap: 10px;
   }
 
   /* NAVBAR */
