@@ -1281,7 +1281,7 @@ margin: 30px;
 
   /* NAVBAR */
   .navbar {
-    width: 100%;
+    width: 100vw;
     
     z-index: 100000;
   }
