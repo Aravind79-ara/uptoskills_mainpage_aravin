@@ -1269,7 +1269,7 @@ margin: 30px;
 /*
    FULL MOBILE RESPONSIVE UPGRADE  (max-width: 450px)
   */
-@media (max-width: 450px) {
+@media (max-width: 550px) {
 
   body {
     width: 100%;
@@ -1281,13 +1281,14 @@ margin: 30px;
 
   /* NAVBAR */
   .navbar {
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 6px;
     padding: 8px 8px 3px;
     border-radius: 5pxs;
-    z-index: 10000;
+    z-index: 100000;
     right: 0;
   }
 
