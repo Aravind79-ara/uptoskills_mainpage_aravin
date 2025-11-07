@@ -72,70 +72,7 @@
                 <button class="for_faculty">
                  For Faculty
                 </button></div>
-                <!-- Job Cards Grid -->
-                <div class="job-cards-grid">
-                    <!-- Row 1 -->
-                    <div class="job-card">
-                        <div class="job-icon">💼</div>
-                        <div class="job-avatar">
-                            <img src="jobs.jpg" alt="Avatar">
-                        </div><h1>Jobs</h1>
-                        <h3 class="job-title">Land Your <br> Dreams Job</h3>
-                        <button class="btn-apply">Exlpore</button>
-                    </div>
-                    
-                    <div class="job-card">
-                        <div class="job-icon">💻</div>
-                        <div class="job-avatar">
-                            <img src="internship.jpg" alt="Avatar">
-                        </div>
-                        <h1>Internships</h1>
-                        <h3 class="job-title">Find the Internships <br>that fit your<br> career aspiration</h3>
-                        <button class="btn-apply">Explore</button>
-                    </div>
-                    
-                    <div class="job-card">
-                        <div class="job-icon">👤</div>
-                        <div class="job-avatar">
-                            <img src="events.jpg" alt="Avatar">
-                        </div><h1>Events</h1>
-                        <h3 class="job-title">Join Industry ,<br> networking sessions</h3>
-                        <button class="btn-apply">Explore</button>
-                    </div>
-
-                    <!-- Row 2 -->
-                    <div class="job-card">
-                        <div class="job-icon">🎯</div>
-                        <div class="job-avatar">
-                            <img src="code cha.jpeg" alt="Avatar">
-                        </div><h1 class="compi">Competitions</h1>
-                        <h3 class="job-title">Compete in coding <br> challenges</h3>
-                        <button class="btn-apply">Explore</button>
-                    </div>
-                    
-                    <div class="job-card">
-                        <div class="job-icon">💡</div>
-                        <div class="job-avatar">
-                            <img src="learn and earn.jpg" alt="Avatar">
-                        </div><h1>Learn <br> & Earn</h1>
-                        <h3 class="job-title">Master skills through <br>courses and earn money</h3>
-                        <button class="btn-apply">Expolre</button>
-                    </div>
-                    
-                    <div class="job-card">
-                        <div class="job-icon">🎪</div>
-                        <div class="job-avatar">
-                            <img src="refer and earn.jpeg" alt="Avatar">
-                        </div><h1>Refer <br>& Earn</h1>
-                        <h3 class="job-title">Refer a friend get a prize.</h3>
-                        <button class="btn-apply">Explore</button>
-                    </div>
-                </div>
-            </div>
-
-            
-              
-
+                
         <!-- Hero Image -->
         <div class="hero-image">
             <img src="landing.png" alt="Professional">
@@ -143,6 +80,75 @@
     </div>
     </div>
         </div>
+   <div class="box1">
+    <div class="slider-container">
+    <div class="slider-wrapper">
+        <div class="job-card">
+            <div class="job-icon">💼</div>
+            <div class="job-avatar">
+                <img src="jobs.jpg" alt="Avatar">
+            </div>
+            <h1>Jobs</h1>
+            <h3 class="job-title">Land Your <br> Dreams Job</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+        <div class="job-card">
+            <div class="job-icon">💻</div>
+            <div class="job-avatar">
+                <img src="internship.jpg" alt="Avatar">
+            </div>
+            <h1>Internships</h1>
+            <h3 class="job-title">Find the Internships <br>that fit your<br> career aspiration</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+        <div class="job-card">
+            <div class="job-icon">👤</div>
+            <div class="job-avatar">
+                <img src="events.jpg" alt="Avatar">
+            </div>
+            <h1>Events</h1>
+            <h3 class="job-title">Join Industry ,<br> networking sessions</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+        <div class="job-card">
+            <div class="job-icon">🎯</div>
+            <div class="job-avatar">
+                <img src="code cha.jpeg" alt="Avatar">
+            </div>
+            <h1 class="compi">Competitions</h1>
+            <h3 class="job-title">Compete in coding <br> challenges</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+        <div class="job-card">
+            <div class="job-icon">💡</div>
+            <div class="job-avatar">
+                <img src="learn and earn.jpg" alt="Avatar">
+            </div>
+            <h1>Learn <br> & Earn</h1>
+            <h3 class="job-title">Master skills through <br>courses and earn money</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+        <div class="job-card">
+            <div class="job-icon">🎪</div>
+            <div class="job-avatar">
+                <img src="refer and earn.jpeg" alt="Avatar">
+            </div>
+            <h1>Refer <br>& Earn</h1>
+            <h3 class="job-title">Refer a friend get a prize.</h3>
+            <button class="btn-apply">Explore</button>
+        </div>
+    </div>
+    <!-- Pagination Dots -->
+    <div class="slider-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+    </div>
+</div>
+   </div>
       
  
  <div class="box1">
@@ -152,7 +158,62 @@
 <h3 class="c2-h3" style="color: white;">A comprehensive platform for learning, growth, and career transformation
 
 </h3>
-          <img src="explore.jpeg" alt="box" class="c2-img"> 
+          <div class="wrapper">
+    <!-- set quantity on .inner; each .card needs --index (0..quantity-1) -->
+    <div class="inner" style="--quantity: 8;">
+      <!-- example: 8 cards with inline --index -->
+      <div class="card" style="--index:0;">
+        <div class="img" style= " 
+        background-image:url('1.png');
+        background-size:cover; background-position:center;">
+          
+          <div class="label">Card 1</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:1;">
+        <div class="img" style="background-image: url('2.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 2</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:2;">
+        <div class="img" style="background-image: url('3.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 3</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:3;">
+        <div class="img" style="background-image: url('4.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 4</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:4;">
+        <div class="img" style="background-image: url('5.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 5</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:5;">
+        <div class="img" style="background-image: url('6.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 6</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:6;">
+        <div class="img" style="background-image: url('7.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 7</div>
+        </div>
+      </div>
+
+      <div class="card" style="--index:7;">
+        <div class="img" style="background-image: url('8.png'); background-size:cover; background-position:center;">
+          <div class="label">Card 8</div>
+        </div>
+      </div>
+    </div>
+  </div>
           <button class="c2-button">Start Your Journey</button> 
         </div>
 
@@ -486,6 +547,113 @@
     </div>
 
 </div><!-- grid end -->
+<script>
+    // Auto Slider Configuration
+    const sliderWrapper = document.querySelector('.slider-wrapper');
+    const dots = document.querySelectorAll('.dot');
+    const cards = document.querySelectorAll('.job-card');
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    // Check if we're in mobile view
+    function isMobileView() {
+        return window.innerWidth < 768;
+    }
+
+    // Update slider position
+    function updateSlider(index) {
+        if (!isMobileView()) return;
+        currentIndex = index;
+        const offset = -currentIndex * 100;
+        sliderWrapper.style.transform = `translateX(${offset}%)`;
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
+    }
+
+    // Next slide
+    function nextSlide() {
+        if (!isMobileView()) return;
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateSlider(currentIndex);
+    }
+
+    // Previous slide
+    function prevSlide() {
+        if (!isMobileView()) return;
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateSlider(currentIndex);
+    }
+
+    // Start auto-slide
+    function startAutoSlide() {
+        if (isMobileView()) {
+            autoSlideInterval = setInterval(nextSlide, 3000);
+        }
+    }
+
+    // Stop auto-slide
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+
+    // Dot click handlers
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            updateSlider(index);
+            stopAutoSlide();
+            startAutoSlide();
+        });
+    });
+
+    // Touch/Swipe support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+    sliderWrapper.addEventListener('touchstart', (e) => {
+        if (!isMobileView()) return;
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoSlide();
+    });
+    sliderWrapper.addEventListener('touchend', (e) => {
+        if (!isMobileView()) return;
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoSlide();
+    });
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide();
+            } else {
+                prevSlide();
+            }
+        }
+    }
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (isMobileView()) {
+            updateSlider(currentIndex);
+            startAutoSlide();
+        } else {
+            stopAutoSlide();
+            sliderWrapper.style.transform = 'none';
+        }
+    });
+
+    // Initialize
+    if (isMobileView()) {
+        startAutoSlide();
+    }
+
+    // Pause auto-slide when hovering (mobile)
+    sliderWrapper.addEventListener('touchstart', stopAutoSlide);
+    sliderWrapper.addEventListener('touchend', () => {
+        if (isMobileView()) startAutoSlide();
+    });
+</script>
 
 </body>
 </html>
