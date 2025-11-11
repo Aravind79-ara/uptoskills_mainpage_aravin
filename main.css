@@ -930,7 +930,7 @@ body{
 
   }
   .c6{
-     background: linear-gradient(190deg,#0c2c36 50%, #10340b 10%, #f41ad4 100%);
+     background: linear-gradient(190deg,rgb(242, 4, 167)  50%, #0916ff 10%, #1803f7 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
