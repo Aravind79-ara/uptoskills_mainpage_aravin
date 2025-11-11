@@ -198,7 +198,7 @@ body{
     z-index: 100000;
   }
   .logo-text {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .nav-links a {
@@ -311,7 +311,7 @@ body{
 
 
 .started p{
-    font-size: 25px;
+    font-size: 22px;
     color: #e490a5;
  
 }
@@ -381,10 +381,12 @@ body{
 .btn-55:hover{
   box-shadow: 0 4px 10px white;
 }
+
+
 .box {
     background: black;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     max-width: 500px;
     justify-content: center;
     align-items: center;
@@ -394,14 +396,16 @@ body{
     position: relative;/* push box below hero content naturally */
     transition: all 2s ease;
 }
-button{
-    padding: 20px;
+.box button{
+    padding: 5px 20px;
     border-radius: 20px;
     border-style: none;
     font-weight: 700;
     font-size: 20px;
     transition: transform 0.2s;
     cursor: pointer;
+    background-color: white;
+    color: #000;
 }
 .for_student:hover {
     background:white;
@@ -437,6 +441,15 @@ button{
     object-fit: cover;
     opacity: 0.9;
     border-radius: 20px;
+}
+@media (max-width: 767px) {
+ .box button{
+  padding: 5px;
+ }
+  .btn-55{
+    padding: 1px;
+  }
+
 }
 
 
